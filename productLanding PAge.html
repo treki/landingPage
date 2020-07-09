@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<style type="text/css">
+
+html, body{ /* to remove white space from corners (body has a default margin. Remoe it via)*/
+	margin:0;
+	padding: 0;
+}
+body{
+	background-image: linear-gradient(pink, purple);
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	color: white;
+}
+
+#header{
+	float: left;
+	padding: 45px 0 0 0px;
+
+}
+#header-img{
+	width: 40px;
+	margin: 20px 5px 0px 5px;
+	float: left;
+	overflow: auto;
+
+}
+
+ul{
+	list-style-type: none; /* to get rid of bullets in UL/OL*/
+	margin: 0px;
+	padding: 0px;
+	background-color: #D44BC1;
+	width: 100%;
+	
+}
+ul{  /* nav get's fixed at top*/
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li{
+	display: inline;
+	padding: 10px 25px 10px 0px;
+	margin: 0px;
+	float: right;
+	border-radius: 2px;
+	font-size: 18px;
+}
+
+#title{
+	padding-top: 100px;
+	margin-top: 40px;
+
+}
+#form{
+	
+	padding-top: 30px;
+	padding-bottom: 50px;
+
+}
+#form, h2{
+	font-size: 35px;
+	padding-top: 5px;
+}
+input{
+	border-radius: 5px;
+	margin: 0px;
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 1.4;
+}
+#email{
+	padding-left: 15px;
+}
+#submit,
+#choose{
+	color: white;
+	margin: 20px;
+	padding: 5px 10px 5px 5px;
+	background: linear-gradient(90deg, rgba(121,9,46,1) 39%, rgba(248,0,255,1) 100%);
+	width: 15%;
+
+}
+#choose{
+	width: 30%
+}
+#submit:hover,
+#choose:hover{
+	background: linear-gradient(90deg, rgba(209,26,86,1) 39%, rgba(232,105,236,1) 100%);
+	}
+
+	.flex-container{
+		display: flex;
+		flex-direction: row;
+		margin: 10px;
+		
+	}
+.flex-container .item{ /* Parent-class to Div-Child element container */
+	padding: 10px;
+	margin: 5px;
+	background-color: #FFFFFF;
+	color: black;
+	border-radius: 5px;
+}
+.item{
+	width:50%;
+}
+.flex-container > div > #logo-img{
+	width: 35%;
+	padding: 0px;
+	margin: 0px;
+}
+h2{
+	margin-top: -20px;
+}
+footer{
+	background-color: #D44BC1;
+	padding:20px;
+}
+#footer{
+	text-align: right;
+}
+@media (max-width: 750px){
+	body{
+		position: relative;
+}
+#header-img{
+	width: 4%;
+}
+#header {
+	font-size: 18px;
+}
+#video{
+	width: 420px;
+	height: 310px;
+}
+h2{
+	font-size: 25px;
+}
+.flex-container{  /*to center with flexbox*/
+	 align-items: center; 
+	 justify-content: center;
+	 flex-direction: column;
+}
+}
+
+
+</style>
+
+
+<head>	
+	<img id="header-img" src="https://toppng.com/uploads/preview/cosmetics-free-vector-icon-designed-by-freepik-makeup-instagram-highlight-cover-11563314657dafj5jfmza.png">
+<h2 id="header">DarthVader Masks</h2>
+
+<nav id="nav-bar">
+	<ul>
+		<li class="nav-link"<a href="#video"></a>Video</li>
+		<li class="nav-link"<a href="#how"></a>How It Works</li>
+		<li class="nav-link"<a href="#price"></a>Pricing</li>
+	</ul>
+</nav>
+	</head>
+<body>
+	<div id="title">
+<h1>Mositurizing Face Mask<h1>
+		<iframe id="video" width="660" height="415" src="https://www.youtube.com/embed/-06Z5AD0A9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+<form id="form" action=https://www.freecodecamp.com/email-submit> <!--Submit-Input- goes here under action()URL  -->
+	<h2>Get your discount today!</h2>
+	<input id="email" name="email" placeholder="Please enter your email" required ><br>
+	<input id="submit" type="submit" value="Submit">
+</form>
+<div class="flex-container">
+	<div class="item">
+	<img id="logo-img" src="https://winaero.com/blog/wp-content/uploads/2017/07/Paint-3D-icon-logo.png">
+	<h2><u>Charcoal Mask</u></h2>
+	<p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+	<input id="choose" type="submit" name="submit" value="$50"></div>
+
+	<div class="item">
+	<img id="logo-img"src="https://winaero.com/blog/wp-content/uploads/2017/07/Paint-3D-icon-logo.png">
+	<h2><u>Mositurizing Mask</u></h2>
+	<p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+<input id="choose" type="submit" name="submit" value="$100"></div>
+	<div class="item">
+	<img id="logo-img" src="https://winaero.com/blog/wp-content/uploads/2017/07/Paint-3D-icon-logo.png">
+	<h2><u>Bright Mask</u></h2>
+	<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+<input id="choose" type="submit" name="submit" value="$150"></div>
+</div>
+<footer>
+	<div id="footer">
+		<p><i>Copyright 2020</i> - <b>Darthvader Masks</b></p>
+	</div>
+</footer>
+</body>
